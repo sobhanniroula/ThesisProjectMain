@@ -1,0 +1,334 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mountain.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: sans-serif monospace;
+}
+
+.row {
+    max-width: 1800px;
+    margin: auto;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 65px;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 7px;
+    padding: 10px;
+}
+
+.login-nav {
+    float: right;
+    list-style: none;
+    margin-top: 65px;
+    margin-left: 15px;
+}
+
+.login-nav li {
+    display: inline-block;
+}
+
+.login-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.main-nav li.active a {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main-nav li a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login-nav li.active a {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login-nav li a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: lightgreen;
+    transition: all 0.3s ease-out;
+}
+
+.logo img {
+    width: 105px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+/* Welcome to Movemandu Website */
+
+.welcome {
+    position: absolute;
+    width: 1200px;
+    margin-left: 20%;
+    margin-right: -20%;
+    float: bottom;
+}
+
+h2 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50%;
+    font-family: sans-serif;
+}
+
+.button {
+    margin-top: 30px;
+    margin-left: 440px;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-right: 15px;
+    border-radius: 12px;
+}
+
+.btn-one {
+    background-color: darkorange;
+}
+
+.btn-two:hover {
+    background-color: darkorange;
+    transition: all 0.5s ease-in;
+}
+
+
+/* Login Page */
+
+.loginbox {
+    background-color: #00bfff;
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.user-logo {
+    width: 100px;
+    color: aliceblue;
+    display: inline-block;
+}
+
+#login-title {
+    margin: 10px;
+    padding: 10px;
+    border: 0px;
+    display: inline-block;
+    position: inherit;
+    color: aliceblue;
+}
+
+form {
+    margin: 40px 25px;
+}
+
+#loginform {
+    margin: 30px;
+}
+
+.loginbox p {
+    margin: 7px;
+    padding: 2px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    background-color: #f28080;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #f9e827;
+    color: #000;
+    text-decoration-style: solid;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin: 50px 20px 10px 20px;
+    line-height: 70px;
+}
+
+
+/* Signup / Registration Page */
+
+.signupbox {
+    background-color: lightseagreen;
+    width: 510px;
+    height: 750px;
+    position: fixed;
+    top: 10;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+#signup-title {
+    margin: 10px 100px 10px 150px;
+    padding: 10px;
+    border: 0px;
+    display: inline-block;
+    position: inherit;
+    color: aliceblue;
+}
+
+form {
+    margin: 120px 25px;
+}
+
+.signupbox p {
+    margin: 7px;
+    padding: 2px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+
+.signupbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signupbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.signupbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    background-color: #f28080;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+
+.signupbox input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #f9e827;
+    color: #000;
+    text-decoration-style: solid;
+}
+
+.signupbox placeholder {
+    color: aliceblue;
+}
+
+.signupbox a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin: 50px 20px 10px 20px;
+    line-height: 70px;
+}
+
+
+
+/* Parallax scroll feature on services.html page (Javascript) */
+
+.parallax {
+    min-height: 400px;
+    background: transparent;
+}
+
+.services {
+    width: 80%;
+    text-align: justify;
+    margin: 50px auto 0px auto;
+}
+
+.services p {
+    color: aliceblue;
+}
