@@ -1,2 +1,0 @@
-# ThesisProjectMain
-Thesis Project
