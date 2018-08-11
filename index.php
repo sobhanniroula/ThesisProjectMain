@@ -22,12 +22,12 @@
             </div>
 
             <ul class="login-nav">
-                <li> <a href="login-form.html"> LOGIN </a> </li>
+                <li> <a href="login-form.php"> LOGIN </a> </li>
             </ul>
 
             <ul class="main-nav">
-                <li class="active"> <a href="index.html"> HOME </a> </li>
-                <li> <a href="services.html"> SERVICES </a> </li>
+                <li class="active"> <a href="index.php"> HOME </a> </li>
+                <li> <a href="services.php"> SERVICES </a> </li>
                 <li> <a href="#"> STUDENTS </a> </li>
                 <li> <a href="#"> OWNERS </a> </li>
                 <li> <a href="#"> DEALERS </a> </li>
@@ -42,7 +42,7 @@
 
             <div class="button">
                 <a href="https://youtu.be/OC3XMzGGFi4" class="btn btn-one"> Watch Video </a>
-                <a href="services.html" class="btn btn-two"> Explore services </a>
+                <a href="services.php" class="btn btn-two"> Explore services </a>
 
             </div>
         </div>

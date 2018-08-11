@@ -38,29 +38,15 @@
         </div>
     </header>
 
-    <div class="signupbox">
 
-        <div id="signup-title">
-            <h1> Signup Form </h1>
-        </div>
+    <div class="welcome">
+        <h2> You have successfully signed up!! </h2>
 
-        <form id="signupform" action="includes/signup-inc.php" method="POST">
-            <p> First Name: </p>
-            <input type="text" name="first_name" placeholder="Enter your first name here">
-            <p> Last Name: </p>
-            <input type="text" name="last_name" placeholder="Enter your email here">
-            <p> Username: </p>
-            <input type="text" name="user_name" placeholder="Enter a username you want">
-            <p> Email: </p>
-            <input type="text" name="email" placeholder="Enter your email here">
-            <p> Password: </p>
-            <input type="password" name="password" placeholder="Enter your desired password">
-            <input type="submit" name="submit" value="Register">
-            <a href="login-form.php"> Already a registered user? </a>
 
-        </form>
 
     </div>
+
+
 
 
 </body>

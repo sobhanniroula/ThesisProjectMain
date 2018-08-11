@@ -1,3 +1,38 @@
+<?php 
+
+/*
+$host="localhost"; // Host name
+$user="root"; // Mysql username
+$password=""; // Database password
+$db_name="movemandu"; // Database name
+
+// Connection to the database, select database and error message.
+$conn = mysqli_connect($host, $user ,$password, $db_name) or die("cannot connect");
+
+
+if(isset($_POST['user_name'])) {
+    $username=$_POST['user_name'];
+    $password=$_POST['user_password'];
+    
+    $sql="select * from users where user_name='".$username."' AND user_password='".$password."' limit 1";
+    
+    $result=mysqli_query($sql);
+    
+    if(mysqli_num_rows($result)===1) {
+        echo "You have successfully logged in";
+        exit();
+    }
+    else{
+        echo "Either Username or Password is wrong";
+        exit();
+    }
+    
+}
+*/
+
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -22,12 +57,12 @@
             </div>
 
             <ul class="login-nav">
-                <li class="active"> <a href="login-form.html"> LOGIN </a> </li>
+                <li class="active"> <a href="login-form.php"> LOGIN </a> </li>
             </ul>
 
             <ul class="main-nav">
-                <li> <a href="index.html"> HOME </a> </li>
-                <li> <a href="services.html"> SERVICES </a> </li>
+                <li> <a href="index.php"> HOME </a> </li>
+                <li> <a href="services.php"> SERVICES </a> </li>
                 <li> <a href="#"> STUDENTS </a> </li>
                 <li> <a href="#"> OWNERS </a> </li>
                 <li> <a href="#"> DEALERS </a> </li>
@@ -44,14 +79,14 @@
             <h1> Login Form </h1>
         </div>
 
-        <form id="loginform">
+        <form id="loginform" method="POST" action="#">
             <p> Username: </p>
             <input type="text" name="username" placeholder="Enter your username here">
             <p> Password: </p>
             <input type="password" name="password" placeholder="Enter your password here">
             <input type="submit" name="submit" value="Login">
             <a href="#"> Password Lost? </a>
-            <a href="signup.html"> Register for new user </a>
+            <a href="signup.php"> Register for new user </a>
         </form>
 
     </div>

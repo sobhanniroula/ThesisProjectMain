@@ -22,12 +22,12 @@
             </div>
 
             <ul class="login-nav">
-                <li> <a href="login-form.html"> LOGIN </a> </li>
+                <li> <a href="login-form.php"> LOGIN </a> </li>
             </ul>
 
             <ul class="main-nav">
-                <li> <a href="index.html"> HOME </a> </li>
-                <li class="active"> <a href="services.html"> SERVICES </a> </li>
+                <li> <a href="index.php"> HOME </a> </li>
+                <li class="active"> <a href="services.php"> SERVICES </a> </li>
                 <li> <a href="#"> STUDENTS </a> </li>
                 <li> <a href="#"> OWNERS </a> </li>
                 <li> <a href="#"> DEALERS </a> </li>
