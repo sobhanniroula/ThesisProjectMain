@@ -82,15 +82,26 @@ if(isset($_POST['user_name'])) {
             <h1> Login Form </h1>
         </div>
 
-        <form id="loginform" action="includes/login-inc.php" method="POST">
-            <p> Username: </p>
-            <input type="text" name="username" placeholder="Enter your username here">
-            <p> Password: </p>
-            <input type="password" name="password" placeholder="Enter your password here">
-            <input type="submit" name="submit" value="Login">
-            <a href="#"> Password Lost? </a>
-            <a href="signup.php"> Register for new user </a>
-        </form>
+        <?php
+            if (isset($_SESSION['u_id'])) {
+                echo '<form action="includes/logout-inc.php" method="POST">
+                <button type="submit" name="submit"> LogOut </button>
+            </form>';
+            } else {
+                echo '
+            <form id="loginform" action="includes/login-inc.php" method="POST">
+                <p> Username/ Email: </p>
+                <input type="text" name="username" placeholder="Enter your username or email here">
+                <p> Password: </p>
+                <input type="password" name="password" placeholder="Enter your password here">
+                <input type="submit" name="submit" value="Login">
+                <a href="#"> Password Lost? </a>
+                <a href="signup.php"> Register for new user </a>
+            </form>';
+            }
+        
+        ?>
+
 
     </div>
 

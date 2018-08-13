@@ -27,7 +27,9 @@ session_start();
                 <img src="img/movemandu-white.png" alt="Movemandu Logo">
             </div>
 
-
+            <ul class="login-nav">
+                <li class="active"> <a href="login-form.php"> LOGIN </a> </li>
+            </ul>
 
             <ul class="main-nav">
                 <li> <a href="index.php"> HOME </a> </li>

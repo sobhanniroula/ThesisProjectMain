@@ -19,6 +19,7 @@ if (isset($_POST['submit'])) {
         $sql = "SELECT * FROM users WHERE user_name='$username' OR email='$username'";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
+            
         if ($resultCheck < 1) {
             header("Location: ../login-form.php?login=error");
             exit();
@@ -26,6 +27,7 @@ if (isset($_POST['submit'])) {
             if ($row = mysqli_fetch_assoc($result)) {
                // De-hashing the password
                 $hashedPasswordCheck = password_verify($password, $row['user_password']);
+                
                 if ($hashedPasswordCheck == false) {
                     header("Location: ../login-form.php?login=error");
                     exit();
