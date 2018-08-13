@@ -4,15 +4,13 @@ session_start();
 
 ?>
 
-
-
 <!DOCTYPE html>
 
 <html>
 <meta name="viewport" content="width=device-width, initial scale=1.0">
 
 <head>
-    <title> Welcome to Movemandu!! </title>
+    <title> Login Success!! </title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/parallax.min.js"></script>
@@ -29,12 +27,10 @@ session_start();
                 <img src="img/movemandu-white.png" alt="Movemandu Logo">
             </div>
 
-            <ul class="login-nav">
-                <li> <a href="login-form.php"> LOGIN </a> </li>
-            </ul>
+
 
             <ul class="main-nav">
-                <li class="active"> <a href="index.php"> HOME </a> </li>
+                <li> <a href="index.php"> HOME </a> </li>
                 <li> <a href="services.php"> SERVICES </a> </li>
                 <li> <a href="#"> STUDENTS </a> </li>
                 <li> <a href="#"> OWNERS </a> </li>
@@ -44,19 +40,21 @@ session_start();
 
 
         </div>
-        <div class="welcome">
-            <h2> Welcome to the 'Movemandu' Website!! </h2>
-
-
-            <div class="button">
-                <a href="https://youtu.be/OC3XMzGGFi4" class="btn btn-one"> Watch Video </a>
-                <a href="services.php" class="btn btn-two"> Explore services </a>
-
-            </div>
-        </div>
-
-
     </header>
+
+
+    <div class="welcome">
+        <h2> Welcome
+            <?php
+            if (isset($_SESSION['u_id'])) {
+                echo $_SESSION['u_username'];
+            }
+        ?>
+
+        </h2>
+
+    </div>
+
 
 
 
