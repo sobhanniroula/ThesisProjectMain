@@ -1,5 +1,8 @@
 <?php 
 
+session_start();
+
+
 /*
 $host="localhost"; // Host name
 $user="root"; // Mysql username
@@ -79,7 +82,7 @@ if(isset($_POST['user_name'])) {
             <h1> Login Form </h1>
         </div>
 
-        <form id="loginform" method="POST" action="#">
+        <form id="loginform" action="includes/login-inc.php" method="POST">
             <p> Username: </p>
             <input type="text" name="username" placeholder="Enter your username here">
             <p> Password: </p>

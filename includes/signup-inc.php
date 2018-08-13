@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
                 header("Location: ../signup.php?signup=email");
                 exit();
             } else {
-                $sql = "SELECT * FROM users WHERE username='$username'";
+                $sql = "SELECT * FROM users WHERE user_name='$username'";
                 $result = mysqli_query($conn, $sql);
                 $resultCheck = mysqli_num_rows($result);
                 
@@ -40,15 +40,12 @@ if (isset($_POST['submit'])) {
                     // Insert the user into the database
                     $sql = "INSERT INTO users (first_name, last_name, user_name, email, user_password) VALUES ('$firstname', '$lastname', '$username',      '$email', '$hashedPassword');";
                     mysqli_query($conn, $sql);
-                    header("Location: ../signup.php?signup=success");
+                    header("Location: ../signed-up.php");
                     exit();
-                }
-                
+                }  
             }
-        }
-           
-           
-           }
+       }
+  }
                     
 } else {
     header("Location: ../signup.php");
